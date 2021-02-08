@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  justify-content: center;
+  display: flex;
+  height: 600px;
+  width: 350px;
+  background-image: url("http://4310.mynmi.net/jweath/Source%20Files/Images%20for%20Import/Background.png");
+  background-size: cover;
+  background-position: bottom;
+
+  transition: 0.4s ease-out;
+}
+section {
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)
+  );
+  padding: 25px;
+}
+.app.warm {
+  background-image: url("https://raw.githubusercontent.com/TylerPottsDev/weather-react/master/src/assets/warm-bg.jpg");
+}
+.search_box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.search_bar {
+  position: sticky;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 7px;
+  border: none;
+  outline: none;
+  width: 250px;
+  display: block;
+  appearance: none;
+  border-radius: 0 0 16px 16px;
+  margin-top: -25px;
+  box-shadow: 0 5px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 20px;
+  transition: 0.5s ease;
+}
+.search_bar:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+.location-box .location {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+.location-box .date {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 2px 2px rgba(50, 50, 70, 0.5);
+}
+.weather-box .temp {
+  position: sticky;
+  
+  display: block;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  font-size: 60px;
+  font-weight: 300;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  border-radius: 16px;
+  margin: 30px auto;
+  font-weight: 900;
+  box-shadow: 4px 3px 6px 4 px rgba(0, 0, 0, 0.2);
+  padding: 15px 25px;
+}
+.weather-box .weather {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+  font-style: italic;
+  text-align: center;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
